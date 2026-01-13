@@ -1,0 +1,147 @@
+# ============================================
+# ZrMOF-GenAssemble Requirements
+# Tested on Windows with Conda environment
+# Based on GHP-MOFassemble with enhancements for Zr-MOFs
+# ============================================
+
+# ====================
+# 1. CONDA SETUP (First setup Conda environment)
+# ====================
+
+# Please create and activate Conda environment first:
+# conda create -n zrmof python=3.9
+# conda activate zrmof
+
+# Add necessary Conda channels:
+# conda config --add channels pyg
+# conda config --add channels pytorch
+# conda config --add channels conda-forge
+# conda config --add channels anaconda
+# conda config --add channels defaults
+
+# ====================
+# 2. CONDA PACKAGES (Install via Conda)
+# ====================
+
+# Install these packages via Conda:
+# conda install -c conda-forge pymatgen openbabel rdkit -y
+
+# ====================
+# 3. PYTORCH INSTALLATION
+# IMPORTANT: Choose appropriate CUDA version for your hardware
+# ====================
+
+# Option A: For CUDA 11.7 (NVIDIA GPUs with compute capability 3.5-8.6)
+# pip uninstall torch -y
+# pip install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 --index-url https://download.pytorch.org/whl/cu117
+
+# Option B: For CUDA 11.8
+# pip install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 --index-url https://download.pytorch.org/whl/cu118
+
+# Option C: For CUDA 12.1
+# pip install torch==2.0.1 torchvision==0.15.2 torchaudio==2.0.2 --index-url https://download.pytorch.org/whl/cu121
+
+# Option D: CPU only (no GPU)
+# pip install torch==1.13.1 torchvision==0.14.1 torchaudio==0.13.1 --index-url https://download.pytorch.org/whl/cpu
+
+# Check your CUDA version with: nvidia-smi
+
+# ====================
+# 4. PYG LIBRARIES (PyTorch Geometric)
+# ====================
+
+# IMPORTANT: PyG version must match your PyTorch and CUDA version!
+# Visit https://pytorch-geometric.readthedocs.io/en/latest/install/installation.html for correct versions
+
+# For PyTorch 1.13.x + CUDA 11.7:
+# pip install pyg_lib torch_scatter torch_sparse torch_cluster torch_spline_conv -f https://data.pyg.org/whl/torch-1.13.0+cu117.html
+# pip install torch_geometric
+
+# For other versions, check the PyG installation page for appropriate URLs
+
+# ====================
+# 5. CORE DEPENDENCIES
+# ====================
+
+# Data processing
+pandas==1.5.3
+numpy>=1.21.0
+scipy>=1.7.0
+
+# Chemistry and cheminformatics
+# RDKit and OpenBabel installed via Conda above
+molsets
+
+# Machine learning and deep learning
+scikit-learn>=1.0.0
+torchmetrics
+pytorch_lightning>=1.8.0
+transformers
+tensorboard
+
+# Visualization and plotting
+seaborn>=0.11.0
+matplotlib>=3.5.0
+Pillow>=9.0.0
+imageio>=2.19.0
+plotly>=5.10.0
+
+# Utilities and tools
+tqdm>=4.64.0
+wandb
+PyYAML>=6.0
+joblib>=1.1.0
+docopt>=0.6.2
+ray>=2.2.0
+ipykernel>=6.0.0
+jupyter
+notebook
+ipywidgets
+
+# File handling and data formats
+h5py
+tables
+msgpack
+
+# ====================
+# 6. PROJECT-SPECIFIC DEPENDENCIES
+# ====================
+
+# For molecular dynamics and structure analysis (if needed)
+ase>=3.22.0
+mdtraj>=1.9.0
+
+# For additional cheminformatics
+networkx>=2.8.0
+
+# ====================
+# 7. INSTALLATION SCRIPT SUMMARY
+# ====================
+
+"""
+COMPLETE INSTALLATION GUIDE:
+
+1. Create Conda environment:
+   conda create -n zrmof python=3.9
+   conda activate zrmof
+
+2. Add channels:
+   conda config --add channels pyg
+   conda config --add channels pytorch
+   conda config --add channels conda-forge
+   conda config --add channels anaconda
+   conda config --add channels defaults
+
+3. Install Conda packages:
+   conda install -c conda-forge pymatgen openbabel rdkit -y
+
+4. Install PyTorch with CORRECT CUDA VERSION for your hardware:
+   # Check your CUDA version first: nvidia-smi
+   # Choose appropriate command from section 3 above
+
+5. Install PyG libraries compatible with your PyTorch version:
+   # Use appropriate command from section 4 above
+
+6. Install remaining dependencies:
+   pip install -r requirements.txt
+"""
