@@ -1,0 +1,63 @@
+data_
+_symmetry_space_group_name_H-M 'P 1'
+_symmetry_int_tables_number 1
+_cell_length_a 16.461754
+_cell_length_b 16.461754
+_cell_length_c 16.461754
+_cell_angle_alpha 90.000000
+_cell_angle_beta 90.000000
+_cell_angle_gamma 90.000000
+loop_
+_atom_site_label
+_atom_site_type_symbol
+_atom_site_fract_x
+_atom_site_fract_y
+_atom_site_fract_z
+_atom_site_U_iso_or_equiv
+_atom_site_adp_type
+_atom_site_occupancy
+X2       C     -0.08902   -0.03966   0.00980   0.00000  Uiso   1.00
+C3       C     -0.03024   -0.09751   0.03120   0.00000  Uiso   1.00
+C4       C     0.05277   -0.08050   0.02416   0.00000  Uiso   1.00
+X5       C     0.07643   -0.00250   -0.00201   0.00000  Uiso   1.00
+C7       C     0.01800   0.05703   -0.02381   0.00000  Uiso   1.00
+C8       C     -0.06588   0.03685   -0.02136   0.00000  Uiso   1.00
+C9       C     -0.12910   0.09642   -0.05074   0.00000  Uiso   1.00
+C10      C     0.04526   0.14018   -0.05172   0.00000  Uiso   1.00
+C11      C     0.11315   -0.14529   0.04664   0.00000  Uiso   1.00
+H12      H     -0.04987   -0.15677   0.05331   0.00000  Uiso   1.00
+H13      H     -0.14750   0.13672   -0.00120   0.00000  Uiso   1.00
+H14      H     -0.18264   0.06535   -0.07503   0.00000  Uiso   1.00
+H15      H     -0.10628   0.13309   -0.10130   0.00000  Uiso   1.00
+H16      H     0.05376   0.14042   -0.11763   0.00000  Uiso   1.00
+H17      H     0.10189   0.15883   -0.02230   0.00000  Uiso   1.00
+H18      H     0.00111   0.18708   -0.03520   0.00000  Uiso   1.00
+H19      H     0.16271   -0.14813   0.00239   0.00000  Uiso   1.00
+H20      H     0.08470   -0.20545   0.04727   0.00000  Uiso   1.00
+H21      H     0.13792   -0.13364   0.10722   0.00000  Uiso   1.00
+
+loop_
+_geom_bond_atom_site_label_1
+_geom_bond_atom_site_label_2
+_geom_bond_distance
+_geom_bond_site_symmetry_2
+_ccdc_geom_bond_type
+X2        C8         1.412   .     S
+X2        C3         1.403   .     S
+C3        H12        1.090   .     S
+C3        C4         1.400   .     S
+C4        C11        1.504   .     S
+C4        X5         1.409   .     S
+X5        C7         1.419   .     S
+C7        C10        1.512   .     S
+C7        C8         1.421   .     S
+C8        C9         1.509   .     S
+C9        H15        1.095   .     S
+C9        H13        1.094   .     S
+C9        H14        1.095   .     S
+C10       H18        1.095   .     S
+C10       H16        1.094   .     S
+C10       H17        1.094   .     S
+C11       H20        1.096   .     S
+C11       H21        1.094   .     S
+C11       H19        1.095   .     S
